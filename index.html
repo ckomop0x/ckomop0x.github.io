@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <link rel="stylesheet" href="main.css">
-  <title>HTML Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+	<link rel="stylesheet" href="main.css">
+	<title>HTML Portfolio</title>
 </head>
-
 <body>
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="top">Pavel Klochkov Web-Developer</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-4 no-padding">
+					<div class="btn btn-primary btn-block">Start</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="btn btn-primary btn-block">History</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="btn btn-primary btn-block">Credits</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<section>
+		<div class="container">
+			<img class="img-responsive"
+				 src="https://lh3.googleusercontent.com/-mU9DFRILAI3p7NwLJwwaUCQ3FvUiBhIFUvC4Tm5wxbvRHPIKeSaH2r-FukczKgSy_PUFmshz1Vo6glSZrMeBpwe2DjnoIJt-Gd5mzkfULs-_kdqLoaz9YWescEdPoc-byPFkA9-QJNahB9wNPYFvHSGrUbm7yMm3sULjZrPep9KASMbuJansYNUMlGb4eKQhgPKRx1IgALpWabMsS6Xuj8LPueoaurXHJKVwdGJP23_cC5A1G7WJleNCMfZtEgglEMMA3kRFYDyewz6BnsRlp-3rg4EuwvXkwDErKt1XL3XPoocR3rN3MaR5iV-vHhrNaDATreYFslYqfVeFcd1pdFEZLTNR4bFeFNXkltYzHz4qFAltcmBvCeA3UecGums2Hbr8eyLfgFmdBR97Op-sVx_rdz-nxgBDZXS0qtI8ae4D7p2Og_iQvX6ch2fDeK5zydILZ5Ivf0nVaLim6kc2rIDWQbLNeJz4W4r0G-dbFMzdX16Nk8LwG_6rFYihkMbLj22RDbXGmhT60EDxXfDEwiAkDIvihIcSaIfL4QMKpaPvxMsgfNPD7H0u9Gm8DFx913z4-qRBChwVmafeAFXzyA8qDj7xGgY49pGJ9uau_V6VhYXRzHfQqU0hsTiJZLOZI6U7mIECHIiP-qtAmzZE7SxtUbfcf2eiQ=w1280-h960-no"/>
+			<div class="text text-start">
+				<h2>My start.</h2>
+				<p>I started to code in 2006 in Saint-Petersburg. 1.5 years later I changed my work to an another.</p>
+			</div>
+			<div class="text text-history hidden">
+				<h2>My history.</h2>
+				<p>In 2012 I went back to the Web-Development in city near Moscow.</p>
+			</div>
+			<div class="text text-credits hidden">
+				<h2>Credits.</h2>
+				<p>Thanx to you all for interesting lessons and the perfect experience.</p>
+			</div>
+		</div>
+	</section>
+</main>
 
-  <header>
-    <h1>Pavel Kochkov</h1>
-    <h2>Web Application Developer</h2>
-
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-
-  <main>
-    <section class="tagline">
-      <div class="content-wrapper">
-        <h3>A bit more about me</h3>
-        <p>Hey I am Pavel, I work for <a target="_blank" href="https://webtime.studio">Webtime.Studio</a> and I love writing JavaScript!</p>
-      </div>
-    </section>
-    <section class="skills">
-      <div class="content-wrapper">
-        <h3>Skills</h3>
-        <p>Here are some of the technologies I enjoy writing day-to-day:</p>
-        <ul>
-          <li>HTML &amp; CSS</li>
-          <li>Node.js</li>
-          <li>React</li>
-          <li>PWA</li>
-          <li>Webpack</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="content-wrapper">
-        <h3>How to contact me</h3>
-        <p>The easiest way to contact me is via twitter: <a target="_blank" href="https://twitter.com/hashtagserg">@ckomop0x</a></p>
-      </div>
-    </section>
-  </main>
-
-
-  <footer>
-    <div class="content-wrapper">
-      <h3>Credits</h3>
-      <p>This portfolio was created using <a href='https://www.codeschool.com'>Code School's</a> <a href='https://github.com/codeschool/SemanticHTMLPortfolioProject'>Semantic HTML Portfolio Project</a> template.</p>
-    </div>
-  </footer>
-
+<footer class="footer">
+	<div class="container">
+		&copy; 2018 by Pavel Klochkov.<br>
+		<a href="https://webtime.studio"
+		   title="My Webworks Portfolio"
+		   target="_blank">My personal WebStudio page.
+        </a>
+	</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="/src/main.js"></script>
 </body>
-
 </html>
