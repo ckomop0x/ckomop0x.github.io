@@ -26,25 +26,17 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main>
-            {children}
+        <Header siteTitle={data.site.siteMetadata.title}/>
+        <main>
+          {children}
 
-          </main>
-          <footer className="footer">
-            <div className="container">
-              &copy; 2018 – {new Date().getFullYear()} by  <a href="https://github.com/ckomop0x">Pavel "Ckomop0x" Klochkov.</a>
-            </div>
-          </footer>
-        </div>
+        </main>
+        <footer className="footer">
+          <div className="container">
+            &copy; 2018 – {new Date().getFullYear()} by <a href="https://github.com/ckomop0x">Pavel "Ckomop0x"
+            Klochkov.</a>
+          </div>
+        </footer>
       </>
     )}
   />
