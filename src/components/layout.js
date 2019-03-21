@@ -13,7 +13,7 @@ import Header from "./Header/Header"
 // import "./layout.css"
 import "./main.css"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, backgroundImage }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -27,10 +27,10 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title}/>
-        <main>
-          {children}
-
+        <main className="main" style={{backgroundImage: `url(${backgroundImage})`}}>
+          <div className="main__title">Hello, I am Pavel Klochkov</div>
         </main>
+        {children}
         <footer className="footer">
           <div className="container">
             &copy; 2018 – {new Date().getFullYear()} by <a href="https://github.com/ckomop0x">Pavel "Ckomop0x"

@@ -5,33 +5,14 @@ import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <div className="container header__title">{siteTitle}</div>
-    <div className="container">
-      <div className="row">
-        <nav className="col-md-12 header__nav">
-          <div className="col-md-3 no-padding">
-            <Link to="/">
-              <a className="header__link">Home</a>
-            </Link>
-          </div>
-          <div className="col-md-3 no-padding">
-            <Link to="/history/">
-              <a className="btn btn-primary btn-block">History</a>
-            </Link>
-          </div>
-          <div className="col-md-3 no-padding">
-            <Link to="/links/">
-              <a className="btn btn-primary btn-block">Links</a>
-            </Link>
-          </div>
-          <div className="col-md-3 no-padding">
-            <Link to="/credits/">
-              <a className="btn btn-primary btn-block">Credits</a>
-            </Link>
-          </div>
-        </nav>
-      </div>
-    </div>
+    <a href="/" className="header__title">{siteTitle}</a>
+    <nav className="header__nav">
+      <Link to="/" className="header__link">Home</Link>
+      <Link to="/portfolio/" className="header__link">Portfolio</Link>
+      <Link to="/story/" className="header__link">Story</Link>
+      <Link to="/links/" className="header__link">Links</Link>
+      <Link to="/contacts/" className="header__link">Contacts</Link>
+    </nav>
   </header>
 )
 
