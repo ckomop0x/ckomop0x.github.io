@@ -14,8 +14,18 @@ body {
 }
 
 .footer {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: rgba(57, 140, 207, 0.6);
+    bottom: 0;
     text-align: center;
     padding: 15px;
+    color: white;
+}
+
+.footer a {
+    color: white;
 }
 
 .container {
@@ -72,4 +82,11 @@ body {
     .main__title {
         font-size: 60px;
     }
+}
+
+.mainContainer {
+    box-sizing: border-box;
+    padding-top: 48px;
+    height: 100vh;
+    overflow: hidden;
 }

@@ -27,10 +27,9 @@ const Layout = ({ children, backgroundImage }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title}/>
-        <main className="main" style={{backgroundImage: `url(${backgroundImage})`}}>
-          <div className="main__title">Hello, I am Pavel Klochkov</div>
+        <main className="mainContainer">
+          {children}
         </main>
-        {children}
         <footer className="footer">
           <div className="container">
             &copy; 2018 – {new Date().getFullYear()} by <a href="https://github.com/ckomop0x">Pavel "Ckomop0x"
