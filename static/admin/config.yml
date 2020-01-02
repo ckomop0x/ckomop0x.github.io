@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: ckomop0x/ckomop0x.github.io
-  use_graphql: true
+  branch: source
+  repo: ckomop0x/ckomop0x.github.io  
 
 media_folder: static/img
 public_folder: /img
